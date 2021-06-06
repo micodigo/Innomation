@@ -1,0 +1,17 @@
+.background {
+  background-image: url("../Images/Body.png");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mainbody {
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  top: 3rem;
+
+  transform: translateX(-50%);
+  // box-shadow: 1rem 1rem 8rem -3rem #000;
+}
