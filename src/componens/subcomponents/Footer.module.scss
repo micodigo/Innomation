@@ -1,7 +1,99 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/base/layout";
+@import "../../sass/base/typography";
 .footer {
   background-image: url(../../Images/Footer.png);
   background-size: 20%;
-  height: 20vh;
+  height: 45vh;
   display: flex;
   border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: ;
+  position: relative;
+  padding: 2rem 4rem 0 4rem;
+}
+.block {
+  width: 90%;
+  max-width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+.social {
+  position: relative;
+  top: -10rem;
+  height: 25rem;
+  width: 20rem;
+  background-color: $color-primary-light;
+  // box-shadow: 0 1.5rem 4rem rgba(#000, 0.5);
+  border-radius: 1rem;
+  img {
+    width: 100%;
+    margin-top: 1rem;
+    filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(#000, 0.5));
+  }
+  &_links {
+    text-align: center;
+    &_link {
+      color: $color-primary-dark;
+      font-size: 2rem;
+      font-weight: bolder;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      &:not(:last-child) {
+        padding-right: 2rem;
+      }
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.shortcut {
+  font-size: 2rem;
+  align-self: flex-start;
+  // &_details {
+  color: $color-primary-light;
+  // }
+  ul {
+    margin-top: 1rem;
+    list-style: none;
+    line-height: 1.5;
+    a {
+      text-decoration: none;
+      color: $color-primary-light;
+    }
+  }
+}
+.copyright {
+  display: flex;
+  font-size: 1.6rem;
+  // height: 20vh;
+  padding: 2rem;
+  width: 80%;
+  background-color: $color-secondary;
+  border-radius: 1rem 1rem 0 0;
+  &_heading {
+    text-shadow: 0.2rem 0.1rem 0.2rem rgba(#000, 0.6);
+  }
+  &_links {
+    .link {
+      &,
+      &:link {
+        text-decoration: none;
+        text-shadow: 0.2rem 0.1rem 0.2rem rgba(#000, 0.6);
+        color: #000;
+        font-weight: 600;
+      }
+    }
+  }
 }

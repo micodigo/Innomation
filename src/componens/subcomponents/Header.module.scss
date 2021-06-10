@@ -43,7 +43,7 @@
     height: 9vh;
     &_scroll {
       top: 0;
-      background-color: $color-primary-light;
+      background-color: rgb(255, 255, 255);
       animation: navfadein 0.7s ease-in-out;
       z-index: 50;
       opacity: 0.87;

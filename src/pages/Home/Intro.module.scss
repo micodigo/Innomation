@@ -1,0 +1,24 @@
+@import "../../sass/abstracts/mixins";
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/layout";
+@import "../../sass/base/typography";
+@import "../../sass/component/button";
+
+.section {
+  padding-bottom: 0;
+}
+.section_heading {
+  text-align: center;
+}
+.companyname {
+  text-transform: none;
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+.description {
+  p {
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+}

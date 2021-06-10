@@ -1,0 +1,26 @@
+.btn {
+  background-color: $color-secondary;
+  display: block;
+  width: 14rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary-light;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+  }
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+  }
+}

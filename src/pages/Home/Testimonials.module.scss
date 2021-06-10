@@ -1,0 +1,61 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/base/layout";
+@import "../../sass/base/typography";
+
+.section {
+  padding-top: 5rem;
+}
+.testimonials {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  &_testimonial {
+    .box {
+      box-shadow: 0 1.4rem 3rem rgba(#000, 0.3);
+      position: relative;
+      border-radius: 2rem;
+      .message {
+        text-align: center;
+        padding: 3rem;
+        width: 35rem;
+      }
+      .pointer {
+        position: absolute;
+        bottom: 0;
+        transform: translate(50%, 100%);
+        height: 1.5rem;
+        width: 4rem;
+        background-color: $color-primary-light;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+      }
+    }
+  }
+}
+.profile {
+  margin: 0 auto;
+  padding: 2rem;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: red;
+  display: flex;
+  justify-content: space-between;
+  &_image {
+    width: 20%;
+    height: 5.4rem;
+    border-radius: 50%;
+    background-image: url(../../Images/user.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-color: blue;
+  }
+  &_name {
+    width: 70%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

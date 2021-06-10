@@ -1,0 +1,43 @@
+@import "../../sass/abstracts/mixins";
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/layout";
+@import "../../sass/base/typography";
+
+.section {
+  background-color: transparent !important;
+}
+.process {
+  display: flex;
+  justify-content: space-between;
+  &_step {
+    height: 12rem;
+    width: 12rem;
+    background-color: $color-primary-light;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+}
+.concept {
+  background-image: url(../../Images/Process/Concept.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.analysis {
+  background-image: url(../../Images/Process/Analysis.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grow {
+  background-image: url(../../Images/Process/Grow.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.support {
+  background-image: url(../../Images/Process/Support.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

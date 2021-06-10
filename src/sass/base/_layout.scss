@@ -1,0 +1,18 @@
+.section {
+  padding: 14rem 0;
+  background-color: white;
+  font-size: 2rem;
+  position: relative;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertiical;
+  }
+
+  @include clearfix;
+  @include col_1_of_4;
+  @include col_1_of_2;
+}

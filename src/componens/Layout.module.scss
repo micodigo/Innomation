@@ -5,13 +5,14 @@
   height: 100%;
   top: 0;
   left: 0;
+  padding: 3rem 0;
 }
 .mainbody {
   width: 80vw;
   position: relative;
   left: 50%;
   top: 3rem;
-
+  margin-bottom: 10rem;
   transform: translateX(-50%);
   // box-shadow: 1rem 1rem 8rem -3rem #000;
 }

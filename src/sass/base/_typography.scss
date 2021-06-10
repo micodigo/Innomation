@@ -1,0 +1,9 @@
+.heading {
+  &_secondary {
+    color: $color-secondary;
+    text-transform: uppercase;
+  }
+  &_tertiary {
+    color: lighten($color-secondary, 20%);
+  }
+}
