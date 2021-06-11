@@ -97,14 +97,10 @@ export default function Header() {
           </a>
 
           <a
-            href="https://www.skype.com"
+            href="https://api.whatsapp.com/send/?phone=919958075432&text&app_absent=0"
             target="blank"
             className={classes.social_link}
           >
-            {/* <i className="ti-skype social-icon"></i> */}
-            {/* <WhatsAppIcon fontSize="inherit" className={classes.social_icon} />
-             */}
-            {/* <img src={Whatsapp} alt="" className={classes.social_icon} /> */}
             <svg
               id="WhatsApp_Logo"
               data-name="WhatsApp Logo"

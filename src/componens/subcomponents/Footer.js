@@ -18,7 +18,7 @@ function Footer() {
               <i className={`ti-twitter ${classes.social_icon}`}></i>
             </a>
             <a
-              href="https://www.skype.com"
+              href="https://api.whatsapp.com/send/?phone=919958075432&text&app_absent=0"
               target="blank"
               className={classes.social_links_link}
             >
