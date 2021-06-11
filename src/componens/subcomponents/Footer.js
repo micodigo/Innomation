@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.scss";
 import logo_small from "../../Images/logo-small.png";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 function Footer() {
   return (
     <footer className={classes.footer}>
@@ -14,14 +15,14 @@ function Footer() {
               target="blank"
               className={classes.social_links_link}
             >
-              <i className="ti-twitter social-icon"></i>
+              <i className={`ti-twitter ${classes.social_icon}`}></i>
             </a>
             <a
               href="https://www.skype.com"
               target="blank"
               className={classes.social_links_link}
             >
-              <i className="ti-skype social-icon"></i>
+              <WhatsAppIcon fontSize="large" className={classes.social_icon} />
             </a>
             <a
               href=" https://www.linkedin.com/company/innomation-tech-services"

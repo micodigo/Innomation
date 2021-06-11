@@ -119,6 +119,11 @@
   top: 50%;
   transform: translateY(-50%);
   right: 13%;
+  &_icon {
+    transform: translateY(14%);
+    width: 1.8rem;
+    height: 2rem;
+  }
 
   &_link {
     color: $color-primary-dark;
@@ -128,6 +133,13 @@
     transition: all 0.2s;
     &:not(:last-child) {
       padding-right: 2rem;
+    }
+    svg {
+      fill: $color-primary-dark;
+      transition: all 0.2s;
+    }
+    svg:hover {
+      fill: $color-secondary;
     }
     &:hover {
       color: $color-secondary;

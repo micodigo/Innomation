@@ -39,6 +39,11 @@
     margin-top: 1rem;
     filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(#000, 0.5));
   }
+  &_icon {
+    transform: translateY(14%);
+    width: 11% !important;
+    height: 0% !important;
+  }
   &_links {
     text-align: center;
     &_link {
