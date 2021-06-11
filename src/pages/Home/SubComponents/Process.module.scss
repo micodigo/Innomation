@@ -1,7 +1,7 @@
-@import "../../sass/abstracts/mixins";
-@import "../../sass/abstracts/variables";
-@import "../../sass/base/layout";
-@import "../../sass/base/typography";
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/base/layout";
+@import "../../../sass/base/typography";
 
 .section {
   background-color: transparent !important;
@@ -18,25 +18,25 @@
   }
 }
 .concept {
-  background-image: url(../../Images/Process/Concept.png);
+  background-image: url(../../../Images/Process/Concept.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .analysis {
-  background-image: url(../../Images/Process/Analysis.png);
+  background-image: url(../../../Images/Process/Analysis.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .grow {
-  background-image: url(../../Images/Process/Grow.png);
+  background-image: url(../../../Images/Process/Grow.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .support {
-  background-image: url(../../Images/Process/Support.png);
+  background-image: url(../../../Images/Process/Support.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;

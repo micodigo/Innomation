@@ -1,7 +1,7 @@
 import React from "react";
-import hero1 from "../../Images/hero Images/1.png";
-import hero2 from "../../Images/hero Images/2.png";
-import hero3 from "../../Images/hero Images/3.png";
+import hero1 from "../../../Images/hero Images/1.png";
+import hero2 from "../../../Images/hero Images/2.png";
+import hero3 from "../../../Images/hero Images/3.png";
 import classes from "./Hero.module.scss";
 
 const images = [hero1, hero2, hero3];

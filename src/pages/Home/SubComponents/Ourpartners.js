@@ -1,20 +1,20 @@
 import React, { useRef } from "react";
 
 import classes from "./Ourpartners.module.scss";
-import Parle from "../../Images/customers/Parle.png";
-import Bretannia from "../../Images/customers/Britannia.png";
-import Anmol from "../../Images/customers/Anmol.png";
-import Itc from "../../Images/customers/Itc.png";
-import Mondelez from "../../Images/customers/Mondelez.png";
-import Kraft from "../../Images/customers/Kraft.png";
-import Hul from "../../Images/customers/Hul.png";
-import Biobiscuit from "../../Images/customers/Biobiscuit.png";
-import Bisk from "../../Images/customers/Bisk.png";
-import Bonn from "../../Images/customers/Bonn.png";
-import Gk from "../../Images/customers/Gk.png";
-import Patanjali from "../../Images/customers/Patanjali.png";
-import Pladis from "../../Images/customers/Pladis.png";
-import Sobisco from "../../Images/customers/Sobisco.png";
+import Parle from "../../../Images/customers/Parle.png";
+import Bretannia from "../../../Images/customers/Britannia.png";
+import Anmol from "../../../Images/customers/Anmol.png";
+import Itc from "../../../Images/customers/Itc.png";
+import Mondelez from "../../../Images/customers/Mondelez.png";
+import Kraft from "../../../Images/customers/Kraft.png";
+import Hul from "../../../Images/customers/Hul.png";
+import Biobiscuit from "../../../Images/customers/Biobiscuit.png";
+import Bisk from "../../../Images/customers/Bisk.png";
+import Bonn from "../../../Images/customers/Bonn.png";
+import Gk from "../../../Images/customers/Gk.png";
+import Patanjali from "../../../Images/customers/Patanjali.png";
+import Pladis from "../../../Images/customers/Pladis.png";
+import Sobisco from "../../../Images/customers/Sobisco.png";
 export default function Ourpartners() {
   const input = useRef();
   return (

@@ -2,14 +2,14 @@ import React from "react";
 import classes from "./ServicesCard.module.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Cloud from "../../Images/Services/Cloud.png";
-import Automation from "../../Images/Services/Automation.png";
-import Commissioning from "../../Images/Services/Commissioning.png";
-import Consultancy from "../../Images/Services/Consultancy.png";
-import PanelBuilding from "../../Images/Services/PanelBuilding.png";
-import PLC from "../../Images/Services/PLC.png";
-import ThirdParty from "../../Images/Services/ThirdParty.png";
-import Training from "../../Images/Services/Training.png";
+import Cloud from "../../../Images/Services/Cloud.png";
+import Automation from "../../../Images/Services/Automation.png";
+import Commissioning from "../../../Images/Services/Commissioning.png";
+import Consultancy from "../../../Images/Services/Consultancy.png";
+import PanelBuilding from "../../../Images/Services/PanelBuilding.png";
+import PLC from "../../../Images/Services/PLC.png";
+import ThirdParty from "../../../Images/Services/ThirdParty.png";
+import Training from "../../../Images/Services/Training.png";
 export default function ServicesCard() {
   const [state, setstate] = useState({
     objects1: [{ id: 1 }, { id: 2 }],

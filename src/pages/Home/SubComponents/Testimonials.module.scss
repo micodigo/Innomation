@@ -1,7 +1,7 @@
-@import "../../sass/abstracts/variables";
-@import "../../sass/abstracts/mixins";
-@import "../../sass/base/layout";
-@import "../../sass/base/typography";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/base/layout";
+@import "../../../sass/base/typography";
 
 .section {
   padding-top: 5rem;
@@ -45,7 +45,7 @@
     width: 20%;
     height: 5.4rem;
     border-radius: 50%;
-    background-image: url(../../Images/user.png);
+    background-image: url(../../../Images/user.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
