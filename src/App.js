@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./componens/Layout";
 import Home from "./pages/Home/Home";
+import Contact from "./pages/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
           </Route>
           <Route path="/Products" exact>
             <Home />
-          </Route>
-          <Route path="/ContactUs" exact>
-            <Home />
           </Route> */}
+        <Route path="/ContactUs" exact>
+          <Contact />
+        </Route>
       </Switch>
     </Layout>
   );
