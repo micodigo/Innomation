@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Layout from "./componens/Layout";
+import Layout from "./components/Layout";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/Home/Home";
 
 function App() {
@@ -10,10 +11,10 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        {/* <Route path="/Aboutus" exact>
-            <Home />
-          </Route>
-          <Route path="/Services" exact>
+        <Route path="/Aboutus" exact>
+          <AboutUs />
+        </Route>
+        {/*<Route path="/Services" exact>
             <Home />
           </Route>
           <Route path="/Products" exact>
