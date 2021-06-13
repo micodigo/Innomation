@@ -18,6 +18,7 @@
   height: 55vh;
   border: none;
   border-radius: 4px;
+  padding: 14rem 0;
 }
 .div2 {
   display: flex;
@@ -26,6 +27,7 @@
 .div3 {
   display: flex;
   background-color: $color-primary-light;
+  padding: 14rem 0;
 }
 .div4 {
   background-color: $color-primary-light;
@@ -135,13 +137,13 @@
   top: 87vh;
   left: 0;
 }
-h1 {
-  font-size: 3rem;
-  // font-style: italic;
-  text-align: left;
-  margin: 1rem;
-  color: $color-primary-dark;
-}
+// h1 {
+//   font-size: 3rem;
+//   // font-style: italic;
+//   text-align: left;
+//   margin: 1rem;
+//   color: $color-primary-dark;
+// }
 
 input {
   position: relative;

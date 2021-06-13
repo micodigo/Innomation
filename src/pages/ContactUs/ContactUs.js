@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cls from "./Contact.module.scss";
+import Hero from "../../components/CommonHero";
 import { useFormik } from "formik";
 // import Header from "../componens/subcomponents/Header";
 import MapContainer from "./SubComponents/Map";
@@ -29,6 +30,7 @@ export default function Contact(props) {
 
   return (
     <div className={cls.maindiv1}>
+      <Hero name="Contact Us" link="ContactUs" />
       {/* <Header /> */}
       {/* <div className={cls.div5}> */}
       {/* <img src={cont} alt="" className={cls.img2} /> */}

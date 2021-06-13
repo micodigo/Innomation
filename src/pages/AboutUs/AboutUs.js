@@ -3,7 +3,7 @@ import Hero from "../../components/CommonHero";
 function AboutUs() {
   return (
     <>
-      <Hero />
+      <Hero name="About Our Company" link="AboutUs" />
     </>
   );
 }
