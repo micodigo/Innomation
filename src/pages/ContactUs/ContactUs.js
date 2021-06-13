@@ -10,7 +10,7 @@ import Ourpartners from "../Home/SubComponents/Ourpartners";
 
 export default function Contact(props) {
   const [submit, setSubmit] = useState(false);
-  // const [state, setState] = useState(false);
+  const [state, setState] = useState(false);
   const formik = useFormik({
     initialValues: { name: "", contact: "", email: "", message: "" },
     onSubmit: () => {
@@ -30,10 +30,10 @@ export default function Contact(props) {
   return (
     <div className={cls.maindiv1}>
       {/* <Header /> */}
-      <div className={cls.div5}>
-        {/* <img src={cont} alt="" className={cls.img2} /> */}
-        <h1 className={cls.head1}>Contact Us</h1>
-      </div>
+      {/* <div className={cls.div5}> */}
+      {/* <img src={cont} alt="" className={cls.img2} /> */}
+      {/* <h1 className={cls.head1}>Contact Us</h1> */}
+      {/* </div> */}
       <div className={cls.div4}>
         <div>
           {/* <h2>Address</h2> */}
@@ -50,7 +50,7 @@ export default function Contact(props) {
           {/* <h2>saurabhgupta0502@gmail.com</h2> */}
         </div>
       </div>
-      <div className={cls.div4}>
+      <div className={cls.div42}>
         <div>
           {/* <h2>Address</h2> */}
           {/* <br /> */}
@@ -67,6 +67,9 @@ export default function Contact(props) {
         </div>
       </div>
       <div className={cls.maindiv}>
+        <div className={cls.div3}>
+          <MapContainer />
+        </div>
         <div className={cls.div}>
           <h1>Write a Message</h1>
           <form onSubmit={formik.handleSubmit}>
@@ -79,7 +82,11 @@ export default function Contact(props) {
                 onChange={formik.handleChange}
                 value={formik.values.name}
               />
-              {formik.errors.name ? <h3>{formik.errors.name}</h3> : null}
+              {state ? (
+                formik.errors.name ? (
+                  <h2 className={cls.modal2}>{formik.errors.name}</h2>
+                ) : null
+              ) : null}
             </div>
             <div className={cls.div2}>
               <input
@@ -89,7 +96,11 @@ export default function Contact(props) {
                 onChange={formik.handleChange}
                 value={formik.values.contact}
               />
-              {formik.errors.contact ? <h3>{formik.errors.contact}</h3> : null}
+              {state ? (
+                formik.errors.contact ? (
+                  <h2 className={cls.modal2}>{formik.errors.contact}</h2>
+                ) : null
+              ) : null}
             </div>
             <div className={cls.div2}>
               <input
@@ -99,7 +110,11 @@ export default function Contact(props) {
                 onChange={formik.handleChange}
                 value={formik.values.email}
               />
-              {formik.errors.email ? <h3>{formik.errors.email}</h3> : null}
+              {state ? (
+                formik.errors.email ? (
+                  <h2 className={cls.modal2}>{formik.errors.email}</h2>
+                ) : null
+              ) : null}
             </div>
             <div className={cls.div2}>
               <input
@@ -109,7 +124,11 @@ export default function Contact(props) {
                 onChange={formik.handleChange}
                 value={formik.values.message}
               />
-              {formik.errors.message ? <h3>{formik.errors.message}</h3> : null}
+              {state ? (
+                formik.errors.message ? (
+                  <h2 className={cls.modal2}>{formik.errors.message}</h2>
+                ) : null
+              ) : null}
               {/* {JSON.stringify(formik.errors) === "{}"
               ? () => {
                   setState(true);
@@ -120,15 +139,14 @@ export default function Contact(props) {
             {/* <label htmlFor="email">Your Email: </label> */}
             {/* <label htmlFor="message">Your Message: </label> */}
             <br />
-            <button type="Submit">Submit</button>
+            <button type="Submit" onClick={() => setState(true)}>
+              Submit
+            </button>
             {/* {submit ? console.log("Mayank") : null} */}
           </form>
         </div>
         {submit && <Modal onClick={closeModal} />}
         {submit && <Backdrop onClick={closeModal} />}
-        <div className={cls.div3}>
-          <MapContainer />
-        </div>
       </div>
       <Ourpartners />
     </div>

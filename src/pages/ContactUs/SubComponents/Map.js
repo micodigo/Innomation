@@ -2,13 +2,13 @@ import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 const MapContainer = () => {
   const mapStyles = {
-    margin: "3%",
-    height: "55vh",
+    // margin: "3%",
+    height: "60vh",
     width: "100%",
   };
   const defaultCenter = {
     lat: 28.6139,
-    lng: 77.209,
+    lng: 77.1809,
   };
   return (
     <LoadScript googleMapsApiKey="AIzaSyBrONsw77o5YQyhzHyjTk1V6YOyq4UVhL0">
