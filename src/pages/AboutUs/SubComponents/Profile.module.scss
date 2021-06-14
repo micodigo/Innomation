@@ -1,0 +1,40 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/base/layout";
+// @import "../../../sass/base/typography";
+.section {
+  background-color: transparent;
+  padding: 10rem 0;
+}
+.profile {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(20, 5fr);
+  grid-template-rows: repeat(20, 5fr);
+  &_image {
+    grid-row: 1/11;
+    grid-column: 2/6;
+    border-radius: 1rem;
+    .image {
+      width: 120%;
+      border-radius: 2rem;
+    }
+  }
+  &_description {
+    padding: 5rem;
+    background-image: url(../../../Images/Profile/profile_bg.png);
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 2/20;
+    grid-column: 7/21;
+    p {
+      line-height: 1.5;
+    }
+  }
+  &_name {
+    grid-row: 20/21;
+    grid-column: 17/20;
+    color: $color-primary-light;
+  }
+}

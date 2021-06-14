@@ -1,0 +1,54 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/base/layout";
+@import "../../../sass/base/typography";
+// @import "../../../sass/component/button";
+
+.section {
+  background-image: url("../../../Images/Mission.png");
+  height: 110vh;
+  background-position: top;
+  background-size: 49%;
+  background-repeat: no-repeat;
+  display: grid;
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.box {
+  text-align: justify;
+  padding: 1rem;
+  position: relative;
+}
+
+.mission {
+  h3 {
+    color: #c0dd6b;
+  }
+  // top: 5rem;
+  // left: 4%;
+  justify-self: start;
+  width: 30rem;
+  @include halfborder(80%, 50%);
+}
+.vision {
+  h3 {
+    color: #ef836f;
+  }
+  justify-self: end;
+  // right: 2rem;
+  height: 40vh;
+  width: 30rem;
+  @include halfborder(60%, 70%);
+}
+.values {
+  h3 {
+    color: #68c7ff;
+  }
+  // bottom: 5rem;
+  // left: 50%;
+  // transform: translateX(-50%);
+  justify-self: center;
+  width: 50rem;
+  @include halfborder(80%, 50%);
+}

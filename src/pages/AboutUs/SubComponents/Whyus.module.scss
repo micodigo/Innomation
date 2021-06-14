@@ -1,0 +1,72 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/base/layout";
+
+.section {
+  padding: 14rem 4rem;
+}
+.whyus {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.card {
+  background-color: white;
+  // height: 54rem;
+
+  padding: 5rem 2rem 2rem 2rem;
+  border-radius: 90% 0 2rem 2rem;
+  transition: all 0.3s;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+}
+
+.icon {
+  img {
+    width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #666666);
+  }
+}
+
+.description {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  &_text {
+    text-align: center;
+    color: darken($color-primary-dark, 20%);
+    margin-bottom: 1.5rem;
+  }
+}
+.otd {
+  h3 {
+    color: #04a596;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #04a596;
+  }
+}
+.quality {
+  h3 {
+    color: #0c95af;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #0c95af;
+  }
+}
+.experience {
+  h3 {
+    color: #3f73ad;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #3f73ad;
+  }
+}
+.satisfaction {
+  h3 {
+    color: #5f5ca1;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #5f5ca1;
+  }
+}

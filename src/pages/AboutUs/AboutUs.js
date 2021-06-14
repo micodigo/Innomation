@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Profiler } from "react";
 import Hero from "../../components/CommonHero";
+import MVV from "./SubComponents/MVV";
+import Overview from "./SubComponents/Overview";
+import Profile from "./SubComponents/Profile";
+import Whyus from "./SubComponents/Whyus";
 function AboutUs() {
   return (
     <>
       <Hero name="About Our Company" link="AboutUs" />
+      <Overview />
+      <MVV />
+      <Profile />
+      <Whyus />
     </>
   );
 }
-
 export default AboutUs;
