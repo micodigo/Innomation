@@ -15,18 +15,21 @@ function Intro() {
       <div className={classes.row}>
         <div className={classes.description}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            tempora cumque fugiat quos cupiditate ad obcaecati adipisci
-            assumenda incidunt natus dignissimos, deleniti nihil sapiente vel
-            autem nobis earum? Doloremque rerum laborum harum aliquam impedit
-            repudiandae ratione eos quasi quas quisquam soluta ad, culpa
-            reiciendis consectetur esse quia ea, perspiciatis, commodi fugit
-            optio molestiae nihil repellendus. Architecto eligendi impedit
-            reprehenderit libero id, distinctio voluptate ad possimus unde
-            consectetur nam expedita dicta aliquam temporibus sint ullam eveniet
-            similique magni aut. Eveniet quia esse error inventore obcaecati
-            sunt ipsa quas facilis mollitia autem, itaque unde dolorem delectus
-            blanditiis! Architecto, impedit. Perferendis, nam optio?
+            <b>
+              “Our way goes through strong and prompt customer service and
+              customer satisfaction is our prime mover”
+            </b>
+            <br />
+            Keeping in mind the above core policy, InnoMation Tech Services is
+            founded in year 2020 as a venture with headquarters in Delhi, the
+            capital city of India. Our founding team comprise of people with
+            rich experience in the field of Plant Automation, Erection &
+            Commissioning, Control System Design of various process industries
+            notably Food & Beverages, Power, Oil & Gas, HVAC, FMCG, Energy,
+            Sub-Stations etc. We have a team of energetic and smart people
+            having domain expertise in the field of Industrial Automation. Our
+            engineers have hands-on experience on various challenging jobs and
+            different leading automation brands.
           </p>
         </div>
       </div>
