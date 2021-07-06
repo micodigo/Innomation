@@ -1,6 +1,6 @@
 import classes from "./Testimonials.module.scss";
 import React from "react";
-import user from "../../../Images/user.png";
+// import user from "../../../Images/user.png";
 import "../../../themify-icons.css";
 
 function Testimonials() {

@@ -127,7 +127,7 @@ const validate = (values) => {
     errors.contact = "Required";
   } else if (/\D/i.test(values.contact)) {
     errors.contact = "Only numbers are allowed.";
-  } else if (values.contact.length != 10) {
+  } else if (values.contact.length !== 10) {
     errors.contact = "Must be 10 numbers.";
   }
   if (!values.email) {
