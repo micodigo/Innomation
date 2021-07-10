@@ -3,31 +3,33 @@
 @import "../../../sass/base/layout";
 
 .maindiv {
+  background-color: rgb(236, 236, 236);
   display: grid;
-  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  padding: 3rem;
   // width: 50%;
 }
 
 .div {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
+  // position: absolute;
   margin-top: 2.5vh;
-  width: 50%;
+  width: 100%;
   opacity: 0.9;
-  height: 60vh;
+  height: 50vh;
   border: none;
   border-radius: 4px;
-  // padding: 14rem 0;
+  font-size: 2rem;
+  padding: 2rem;
 }
 .div2 {
   display: flex;
 }
 
-.div3 {
-  display: flex;
-  background-color: $color-primary-light;
-  padding-bottom: 14rem;
-}
+// .div3 {
+//   display: flex;
+//   background-color: $color-primary-light;
+//   padding-bottom: 14rem;
+// }
 
 .modal2 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);

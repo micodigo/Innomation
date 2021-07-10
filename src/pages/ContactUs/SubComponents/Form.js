@@ -7,25 +7,39 @@ import axios from "axios";
 function Form(props) {
   const [submit, setSubmit] = useState(false);
   const [state, setState] = useState(false);
+  let config = {
+    headers: {
+      Accept: "*/*",
+      "Content-Type": "application/json",
+    },
+  };
   const formik = useFormik({
     initialValues: { name: "", contact: "", email: "", message: "" },
     onSubmit: (values) => {
       axios
-        .get("https://innomation.herokuapp.com/sendmail", {
-          params: {
-            name: "Mayank Pal",
-          },
-        })
+        .post("https://innomation.herokuapp.com/sendmail", values, config)
         .then((response) => {
-          console.log(response);
-          if (response === "mail sent to Mayank Gupta") {
-            alert("Message sent.");
+          const data = response.data;
+          console.log(data);
+          if (data === "True") {
+            // alert("Message sent.");
             setSubmit(true);
           } else {
             alert("Message send process failed.");
           }
         });
-      alert(JSON.stringify(values));
+      // fetch("https://innomation.herokuapp.com/sendmail")
+      // .then((response) => {response.respon})
+      // .then((data)=>{
+      // console.log(data)
+      // if (data.respon === "True") {
+      //   alert("Message sent.");
+      //   setSubmit(true);
+      // } else {
+      //   alert("Message send process failed.");
+      // }
+      // });
+      // alert(JSON.stringify(values));
     },
     validate,
   });
@@ -34,9 +48,6 @@ function Form(props) {
   }
   return (
     <div className={cls.maindiv}>
-      <div className={cls.div3}>
-        <Map2 />
-      </div>
       <div className={cls.div}>
         <h1>Write a Message</h1>
         <form onSubmit={formik.handleSubmit}>
@@ -109,6 +120,9 @@ function Form(props) {
             Submit
           </button>
         </form>
+      </div>
+      <div>
+        <Map2 />
       </div>
       {submit && <Modal onClick={closeModal} />}
       {submit && <Backdrop onClick={closeModal} />}

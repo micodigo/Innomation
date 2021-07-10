@@ -5,7 +5,6 @@ import picon from "../../Images/phone-icon.png";
 import classes from "./Header.module.scss";
 import { useState } from "react";
 import "../../themify-icons.css";
-import Dropdown from "../Dropdown";
 
 export default function Header() {
   const [navbar, setnavbar] = useState(false);
@@ -50,12 +49,9 @@ export default function Header() {
             </li>
             <li>
               <div>
-                <button>
                   <Link to="/AboutUs" className={classes.navbar_links_link}>
                     About Us
                   </Link>
-                </button>
-                <Dropdown />
               </div>
             </li>
             <li>

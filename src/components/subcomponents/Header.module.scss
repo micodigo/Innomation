@@ -90,9 +90,6 @@
         text-decoration: none;
         color: $color-primary-dark;
         position: relative;
-        &:hover {
-          display: block;
-        }
       }
       &::before {
         content: "";
