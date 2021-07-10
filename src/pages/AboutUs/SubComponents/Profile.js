@@ -5,6 +5,14 @@ import profile from "../../../Images/Profile/profile.jpg";
 function Profile() {
   return (
     <section className={classes.section}>
+      <div className={classes.row}>
+        <div className={classes.section_heading}>
+          {/* <h4 className={classes.heading_tertiary}>Our Process</h4> */}
+          <h2 className={classes.heading_secondary}>
+            Message For Managing Partner
+          </h2>
+        </div>
+      </div>
       <div className={classes.profile}>
         <div className={classes.profile_image}>
           <img src={profile} alt="" className={classes.image} />
