@@ -2,14 +2,30 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import Map2 from "./Map2";
 import cls from "./Form.module.scss";
+import axios from "axios";
 
 function Form(props) {
   const [submit, setSubmit] = useState(false);
   const [state, setState] = useState(false);
   const formik = useFormik({
     initialValues: { name: "", contact: "", email: "", message: "" },
-    onSubmit: () => {
-      setSubmit(true);
+    onSubmit: (values) => {
+      axios
+        .get("https://innomation.herokuapp.com/sendmail", {
+          params: {
+            name: "Mayank Pal",
+          },
+        })
+        .then((response) => {
+          console.log(response);
+          if (response === "mail sent to Mayank Gupta") {
+            alert("Message sent.");
+            setSubmit(true);
+          } else {
+            alert("Message send process failed.");
+          }
+        });
+      alert(JSON.stringify(values));
     },
     validate,
   });
