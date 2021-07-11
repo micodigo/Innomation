@@ -7,6 +7,7 @@ import axios from "axios";
 function Form(props) {
   const [submit, setSubmit] = useState(false);
   const [state, setState] = useState(false);
+  const [err, setErr] = useState(false);
   let config = {
     headers: {
       Accept: "*/*",
@@ -62,7 +63,12 @@ function Form(props) {
             />
             {state ? (
               formik.errors.name ? (
-                <h2 className={cls.modal2}>{formik.errors.name}</h2>
+                <div className={cls.errorbox}>
+                  <div className={cls.pointer}></div>
+                  <div className={cls.box}>
+                    <p> {formik.errors.name}</p>
+                  </div>
+                </div>
               ) : null
             ) : null}
           </div>
@@ -76,8 +82,13 @@ function Form(props) {
               value={formik.values.contact}
             />
             {state ? (
-              formik.errors.contact ? (
-                <h2 className={cls.modal2}>{formik.errors.contact}</h2>
+              !formik.errors.name && formik.errors.contact ? (
+                <div className={cls.errorbox}>
+                  <div className={cls.pointer}></div>
+                  <div className={cls.box}>
+                    <p> {formik.errors.contact}</p>
+                  </div>
+                </div>
               ) : null
             ) : null}
           </div>
@@ -91,8 +102,13 @@ function Form(props) {
               value={formik.values.email}
             />
             {state ? (
-              formik.errors.email ? (
-                <h2 className={cls.modal2}>{formik.errors.email}</h2>
+              !formik.errors.contact && formik.errors.email ? (
+                <div className={cls.errorbox}>
+                  <div className={cls.pointer}></div>
+                  <div className={cls.box}>
+                    <p> {formik.errors.email}</p>
+                  </div>
+                </div>
               ) : null
             ) : null}
           </div>
@@ -106,8 +122,13 @@ function Form(props) {
               value={formik.values.message}
             />
             {state ? (
-              formik.errors.message ? (
-                <h2 className={cls.modal2}>{formik.errors.message}</h2>
+              !formik.errors.email && formik.errors.message ? (
+                <div className={cls.errorbox}>
+                  <div className={cls.pointer}></div>
+                  <div className={cls.box}>
+                    <p> {formik.errors.message}</p>
+                  </div>
+                </div>
               ) : null
             ) : null}
           </div>
