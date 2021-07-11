@@ -38,8 +38,13 @@ function Footer() {
             <h3 className={classes.heading_secondary}>Contact Us</h3>
             <ul>
               <li>InnoMation Tech Services</li>
+              <li>Vivek Vihar, Delhi</li>
               <li>+91-9958075432</li>
-              <li>saurabhgupta0502@gmail.com</li>
+              <li>
+                <a href="mailto:innomation.ts@gmail.com">
+                  innomation.ts@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>

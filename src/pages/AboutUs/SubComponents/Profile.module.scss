@@ -1,10 +1,14 @@
 @import "../../../sass/abstracts/mixins";
 @import "../../../sass/abstracts/variables";
 @import "../../../sass/base/layout";
-// @import "../../../sass/base/typography";
+@import "../../../sass/base/typography";
 .section {
   background-color: transparent;
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+.row {
+  text-align: center;
+  padding:0;
 }
 .profile {
   height: 50vh;
@@ -21,12 +25,16 @@
     }
   }
   &_description {
-    padding: 5rem;
-    background-image: url(../../../Images/Profile/profile_bg.png);
-    background-size: 105%;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-row: 2/20;
+    color: $color-primary-light;
+    // padding: 2rem;
+    // font-size: 85%;
+    // background-image: url(../../../Images/Profile/profile_bg.png);
+    // background-size: 105%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    text-align: justify;
+    padding-left: 2rem;
+    grid-row: 2/21;
     grid-column: 7/21;
     p {
       line-height: 1.5;
