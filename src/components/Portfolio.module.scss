@@ -1,0 +1,21 @@
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+@import "../sass/base/layout";
+
+.objects {
+  display: grid;
+}
+.object1 {
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+}
+.object2 {
+  grid-template-columns: 1fr 2fr;
+  background-color: grey;
+}
+.hero {
+  height: 67vh;
+  background-position: center;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+}

@@ -19,14 +19,18 @@ function Address() {
         </div>
       </div>
       <div className={cls.div42}>
-        <div>
-          <h2>Address</h2>
+        <div style={{ textAlign: "center" }}>
+          <h2>
+            InnoMation Tech Services
+            <br />
+            <span className={cls.span}>Vivek Vihar, Delhi</span>
+          </h2>
         </div>
         <div>
           <h2>+91-9958075432</h2>
         </div>
         <div>
-          <h2>saurabhgupta0502@gmail.com</h2>
+          <h2>innomation.ts@gmail.com</h2>
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@
 
   100% {
     transform: translateX(
-      calc(((-20 * 14) * 1%) - 5.6 * #{$gutter-horizontal})
+      calc(((-20 * 15) * 1%) - 5.6 * #{$gutter-horizontal})
     );
   }
 }

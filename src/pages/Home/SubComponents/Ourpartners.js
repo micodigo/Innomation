@@ -15,6 +15,8 @@ import Gk from "../../../Images/customers/Gk.png";
 import Patanjali from "../../../Images/customers/Patanjali.png";
 import Pladis from "../../../Images/customers/Pladis.png";
 import Sobisco from "../../../Images/customers/Sobisco.png";
+import Parson from "../../../Images/customers/Parson.png";
+
 export default function Ourpartners() {
   const input = useRef();
   return (
@@ -68,6 +70,9 @@ export default function Ourpartners() {
             <img src={Sobisco} alt="" />
           </li>
           <li>
+            <img src={Parson} alt="" />
+          </li>
+          <li>
             <img src={Parle} alt="" />
           </li>
           <li>
@@ -78,9 +83,6 @@ export default function Ourpartners() {
           </li>
           <li>
             <img src={Itc} alt="" />
-          </li>
-          <li>
-            <img src={Mondelez} alt="" />
           </li>
         </ul>
       </div>

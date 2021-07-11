@@ -48,11 +48,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <div>
-                  <Link to="/AboutUs" className={classes.navbar_links_link}>
-                    About Us
-                  </Link>
-              </div>
+              <Link to="/AboutUs" className={classes.navbar_links_link}>
+                About Us
+              </Link>
             </li>
             <li>
               <Link to="/Services" className={classes.navbar_links_link}>
@@ -62,6 +60,11 @@ export default function Header() {
             <li>
               <Link to="/Products" className={classes.navbar_links_link}>
                 Products
+              </Link>
+            </li>
+            <li>
+              <Link to="/Industries" className={classes.navbar_links_link}>
+                Industries
               </Link>
             </li>
             <li>
