@@ -5,6 +5,8 @@ import picon from "../../Images/phone-icon.png";
 import classes from "./Header.module.scss";
 import { useState } from "react";
 import "../../themify-icons.css";
+// import AboutUs from "../../pages/AboutUs/AboutUs";
+// import Intro from "../../pages/Home/SubComponents/Intro";
 
 export default function Header() {
   const [navbar, setnavbar] = useState(false);
