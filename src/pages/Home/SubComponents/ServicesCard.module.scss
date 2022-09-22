@@ -9,7 +9,7 @@
   height: 30rem;
   color: darken($color-primary-dark, 20%);
 
-  background-color: white;
+  // background-color: white;
   font-size: 1.5rem;
 
   text-align: center;
@@ -102,4 +102,11 @@
 .btn {
   width: 11rem;
   margin: 1rem auto;
+}
+
+
+@media (max-width:600px) {
+  .section{
+    display: none;
+  }
 }

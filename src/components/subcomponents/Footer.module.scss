@@ -8,20 +8,20 @@
   height: 45vh;
   display: flex;
   border-radius: 0 0 1rem 1rem;
-  display: flex;
+  // margin: 0 auto;
+  // display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: ;
-  position: relative;
+  align-items: center;
+  // position: relative;
   padding: 2rem 4rem 0 4rem;
 }
 .block {
-  width: 90%;
-  max-width: 90%;
-  position: relative;
+  width: 100%;
+  // max-width: 90%;
+  // position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: 0;
   }
@@ -35,13 +35,14 @@
   // box-shadow: 0 1.5rem 4rem rgba(#000, 0.5);
   border-radius: 1rem;
   img {
-    width: 100%;
+    width: 20rem;
     margin-top: 1rem;
     filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(#000, 0.5));
   }
   &_icon {
     transform: translateY(14%);
-    width: 11% !important;
+    // width: 11% !important;
+    width: 2.5rem !important;
     height: 0% !important;
   }
   &_links {
@@ -65,7 +66,7 @@
 
 .shortcut {
   font-size: 2rem;
-  align-self: flex-start;
+  // align-self: flex-start;
   // &_details {
   color: $color-primary-light;
   // }
@@ -89,6 +90,7 @@
   border-radius: 1rem 1rem 0 0;
   &_heading {
     text-shadow: 0.2rem 0.1rem 0.2rem rgba(#000, 0.6);
+    font-size: 1.6rem;
   }
   &_links {
     .link {
@@ -100,5 +102,58 @@
         font-weight: 600;
       }
     }
+  }
+}
+
+@media (max-width:600px){
+
+  .block{
+    display: block;
+  }
+
+  .footer{
+    height: auto;
+    padding:0;
+  }
+  
+  .social {
+    // position: relative;
+    top: -3rem;
+    // height: 20rem;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+    background-color: $color-primary-light;
+    // box-shadow: 0 1.5rem 4rem rgba(#000, 0.5);
+    border-radius: 1rem;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 10rem;
+      margin-top: 1rem;
+      filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(#000, 0.5));
+    }
+  }
+
+  .shortcut{
+    .contactUs{
+      display: block;
+      text-align: center;
+      // margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .needHelp{
+      display: none;
+    }
+
+    .servicesOur{
+      display: none;
+    }
+  }
+
+  .copyright{
+    padding: 1rem;
+    text-align: center;
   }
 }

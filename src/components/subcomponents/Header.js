@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Images/logo.jpg";
-import picon from "../../Images/phone-icon.png";
+// import picon from "../../Images/phone-icon.png";
 import classes from "./Header.module.scss";
 import { useState } from "react";
 import "../../themify-icons.css";
@@ -27,9 +27,10 @@ export default function Header() {
             <img src={logo} alt="" className={classes.logo_img} />
           </Link>
         </div>
-        <i className={classes.header_sub_phone}>
-          <img src={picon} alt="" className={classes.p_icon} /> +91-9958075432
-        </i>
+        {/* <i className={classes.header_sub_phone}>
+          <img src={picon} alt="" className={classes.p_icon} />
+          <p>+91-9958075432</p>
+        </i> */}
         <Link to="/ContactUs" className={classes.header_sub_contact}>
           Contact Us
         </Link>

@@ -16,3 +16,11 @@
   transform: translateX(-50%);
   // box-shadow: 1rem 1rem 8rem -3rem #000;
 }
+
+@media (max-width:600px) {
+  .mainbody{
+    width: 100%;
+    top: 0%;
+    margin-bottom: 0;
+  }
+}

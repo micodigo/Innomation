@@ -7,7 +7,7 @@ import axios from "axios";
 function Form(props) {
   const [submit, setSubmit] = useState(false);
   const [state, setState] = useState(false);
-  const [err, setErr] = useState(false);
+  // const [err, setErr] = useState(false);
   let config = {
     headers: {
       Accept: "*/*",

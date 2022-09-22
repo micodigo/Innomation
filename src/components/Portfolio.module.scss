@@ -6,16 +6,50 @@
   display: grid;
 }
 .object1 {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: white;
+  img{
+    height: 30rem;
+    width:100%;
+    object-fit: cover;
+    object-position: left;
+  }
 }
 .object2 {
-  grid-template-columns: 1fr 2fr;
-  background-color: grey;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(219, 219, 219);
+  img{
+    height: 30rem;
+    width:100%;
+    object-fit: cover;
+    object-position: left;
+  }
 }
 .hero {
   height: 67vh;
-  background-position: center;
-  background-size: 100% 120%;
+  background-position: left;
+  // background-size: 100% 120%;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width:600px) {
+  .hero{
+    height: 30vh;
+  }
+
+  .object1Imgs{
+    display: block;
+    width: 100%;
+  }
+  // .objects{
+  //   display: block;
+  // }
+
+  // .object1{
+  //   img{
+  //     display: block;
+  //     width: 100%;
+  //   }
+  // }
 }

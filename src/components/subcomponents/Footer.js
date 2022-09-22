@@ -34,56 +34,62 @@ function Footer() {
           </div>
         </div>
         <div className={classes.shortcut}>
-          <div className={classes.shortcut_details}>
-            <h3 className={classes.heading_secondary}>Contact Us</h3>
-            <ul>
-              <li>InnoMation Tech Services</li>
-              <li>Vivek Vihar, Delhi</li>
-              <li>+91-9958075432</li>
-              <li>
-                <a href="mailto:innomation.ts@gmail.com">
-                  innomation.ts@gmail.com
-                </a>
-              </li>
-            </ul>
+          <div className={classes.contactUs}>
+            <div className={classes.shortcut_details}>
+              <h3 className={classes.heading_secondary}>Contact Us</h3>
+              <ul>
+                <li>InnoMation Tech Services</li>
+                <li>Vivek Vihar, Delhi</li>
+                <li>+91-9958075432</li>
+                <li>
+                  <a href="mailto:innomation.ts@gmail.com">
+                    innomation.ts@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={classes.shortcut}>
-          <div className={classes.shortcut_details}>
-            <h3 className={classes.heading_secondary}>Need Help?</h3>
-            <ul>
-              <li>
-                <Link to="/AboutUs">About Us</Link>
-              </li>
-              <li>
-                <Link to="/ContactUs">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/Services">Services</Link>
-              </li>
-              <li>
-                <Link to="/Products">Products</Link>
-              </li>
-            </ul>
+          <div className={classes.needHelp}>
+            <div className={classes.shortcut_details}>
+              <h3 className={classes.heading_secondary}>Need Help?</h3>
+              <ul>
+                <li>
+                  <Link to="/AboutUs">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/ContactUs">Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/Services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/Products">Products</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={classes.shortcut}>
-          <div className={classes.shortcut_details}>
-            <h3 className={classes.heading_secondary}>Services</h3>
-            <ul>
-              <li>
-                <Link to="/Services">Machine Automation</Link>
-              </li>
-              <li>
-                <Link to="/Services">Panel Building</Link>
-              </li>
-              <li>
-                <Link to="/Services">PLC Programming</Link>
-              </li>
-              <li>
-                <Link to="/Services">Industrial IOT</Link>
-              </li>
-            </ul>
+          <div className={classes.servicesOur}>
+            <div className={classes.shortcut_details}>
+              <h3 className={classes.heading_secondary}>Services</h3>
+              <ul>
+                <li>
+                  <Link to="/Services">Machine Automation</Link>
+                </li>
+                <li>
+                  <Link to="/Services">Panel Building</Link>
+                </li>
+                <li>
+                  <Link to="/Services">PLC Programming</Link>
+                </li>
+                <li>
+                  <Link to="/Services">Industrial IOT</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -107,3 +113,4 @@ function Footer() {
 }
 
 export default Footer;
+/* */

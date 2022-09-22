@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero1 from "../../../Images/hero Images/1.png";
 import hero2 from "../../../Images/hero Images/2.png";
 import hero3 from "../../../Images/hero Images/3.png";
@@ -9,7 +9,7 @@ const delay = 3000;
 export default function Hero() {
   const [index, setIndex] = React.useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(
       () =>
         setIndex((prevIndex) =>

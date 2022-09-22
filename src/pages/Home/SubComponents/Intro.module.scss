@@ -5,7 +5,7 @@
 @import "../../../sass/component/button";
 
 .section {
-  padding-bottom: 0;
+  padding-bottom: 0rem;
 }
 .section_heading {
   text-align: center;
@@ -20,5 +20,21 @@
     text-align: justify;
     line-height: 1.6;
     letter-spacing: 1px;
+  }
+}
+
+@media (max-width:600px) {
+  .section {
+    font-size: 1.3rem;
+    padding: 6rem 3rem;
+  }
+
+  .description {
+    p {
+      text-align: justify;
+      line-height: 1.4;
+      // font-size: 1.rem;
+      letter-spacing: 0px;
+    }
   }
 }

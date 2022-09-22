@@ -8,21 +8,29 @@
 }
 .process {
   display: flex;
+  text-align: center;
   justify-content: space-between;
   &_step {
     height: 12rem;
     width: 12rem;
+    margin: 0 auto;
     background-color: $color-primary-light;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 }
 .concept {
+  // text-align: center;
   background-image: url(../../../Images/Process/Concept.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.concept_detail{
+  margin:2rem 0;
+}
+
 .analysis {
   background-image: url(../../../Images/Process/Analysis.png);
   background-size: 70%;
@@ -40,4 +48,26 @@
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width:600px) {
+
+  html{
+    font-size: 50%;
+  }
+
+  .section {
+    background-color: transparent !important;
+    &_heading{
+      text-align: center;
+    }
+  }
+
+  .process{
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+
+
 }

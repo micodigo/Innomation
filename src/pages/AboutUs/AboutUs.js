@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Hero from "../../components/CommonHero";
 import MVV from "./SubComponents/MVV";
 import Overview from "./SubComponents/Overview";

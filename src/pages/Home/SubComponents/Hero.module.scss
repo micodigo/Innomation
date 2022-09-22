@@ -4,7 +4,8 @@
 .hero {
   overflow: hidden;
   max-width: 100%;
-  background-color: #0f0f0f;
+  // height: auto;
+  background-color: #fff;
   // background-image: linear-gradient(to right, #00498d, #00172d);
   &_slider {
     white-space: nowrap;
@@ -14,12 +15,16 @@
 
 .slide {
   display: inline-block;
-  height: 67vh;
+  // height: 67vh;
+  height: auto;
   width: 100%;
+  // height: 100%;
   // background-color: aquamarine;
   img {
+    // display: inline-block;
     width: 100%;
-    height: 100%;
-    opacity: 0.4;
+    // height: 100%;
+    // opacity: 0.8;
+    object-fit: cover;
   }
 }

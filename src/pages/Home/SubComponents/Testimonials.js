@@ -24,7 +24,7 @@ function Testimonials() {
               </div>
               <div className={classes.pointer}></div>
             </div>
-            {/* ////////// */}
+            {/* ///////// */}
             <div className={classes.profile}>
               <div className={classes.profile_image}></div>
               <div className={classes.profile_name}>

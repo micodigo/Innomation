@@ -15,7 +15,9 @@ function Portfolio(props) {
         <div key={index}>
           {index % 2 === 0 ? (
             <div className={`${cls.objects} ${cls.object1}`}>
-              <div style={{ display: "inline-block" }}>{element.name}</div>
+              <div style={{ display: "inline-block", border: "2px solid red" }}>
+                {element.name}
+              </div>
               <div style={{ display: "inline-block" }}>
                 <img src={element.image} alt="" />
               </div>
@@ -25,7 +27,11 @@ function Portfolio(props) {
               <div style={{ display: "inline-block" }}>
                 <img src={element.image} alt="" />
               </div>
-              <div style={{ display: "inline-block" }}>{element.name}</div>
+              <div
+                style={{ display: "inline-block", border: "2px solid blue" }}
+              >
+                {element.name}
+              </div>
             </div>
           )}
         </div>

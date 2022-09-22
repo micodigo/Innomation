@@ -1,6 +1,11 @@
 @import "../../sass/abstracts/variables";
 @import "../../sass/abstracts/mixins";
 @import "../../sass/base/animations";
+
+html{
+  font-size: 62.5%;
+}
+
 .header {
   &_sub {
     border-radius: 1rem 1rem 0 0;
@@ -56,9 +61,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 6%;
+  left: 10%;
   &_img {
-    width: 13%;
+    // width: 13%;
+    width:13rem;
   }
 }
 .p_icon {
@@ -66,10 +72,18 @@
 }
 
 .navbar {
-  position: absolute;
-  left: 13%;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
+  // position: absolute;
+  // left: 13%;
+  // top: 50%;
+  // transform: translateY(-50%);
+  float: left;
+  width: 70%;
+  margin-top: 1.7rem;
+  margin-left: 4.5rem;
+  // padding-top: 2rem;
+  // margin: 0 auto;
+  // text-align: center;
 
   &_links {
     @include clearfix;
@@ -115,10 +129,14 @@
 }
 
 .social {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 13%;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
+  float: right;
+  width: 20%;
+  // margin: 0 auto;
+  margin-top: 1.5rem;
+  // right: 13%;
   &_icon {
     transform: translateY(14%);
     width: 1.8rem;
@@ -143,6 +161,29 @@
     }
     &:hover {
       color: $color-secondary;
+    }
+  }
+}
+
+
+@media (max-width:600px) {
+  .navbar{
+    margin-left: 4rem;
+  }
+
+  .header{
+    &_sub{
+      &_contact{
+        display: none;
+      }
+    }
+  }
+
+  .logo{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img{
+      width: 15rem;
     }
   }
 }
