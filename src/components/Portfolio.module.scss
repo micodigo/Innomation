@@ -2,27 +2,110 @@
 @import "../sass/abstracts/mixins";
 @import "../sass/base/layout";
 
+.section{
+  padding: 6rem 3rem;
+  background-color: rgb(255, 255, 255);
+}
+
 .objects {
-  display: grid;
+  // @include clearfix;
+  display: block;
+  font-size: 2rem;
+  margin:6rem 0;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.301);
+  // margin: 2rem;
 }
 .object1 {
-  grid-template-columns: 1fr 1fr;
-  background-color: white;
-  img{
+  // grid-template-columns: 1fr 1fr;
+  // margin: 2rem;
+  @include clearfix;
+  height: 30rem;
+  box-sizing: border-box;
+  // border: 2px solid red;
+  .TextDetails{
+    background-color: white;
+    float: left;
+    width: 50%;
     height: 30rem;
-    width:100%;
+  }
+  position: relative;
+  img{
+    // margin: 1rem;
+    // padding: 1rem;
+    // display: block;
+    // box-sizing: border-box;
+    float: right;
+    height: 30rem;
+    width:50%;
     object-fit: cover;
     object-position: left;
+    position: relative;
+    // border: 2px solid red;
+  }&::after{
+    content: "";
+    // border: 2px solid red;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.616);
+    // clear: both;
+  }
+  h2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 1;
   }
 }
 .object2 {
-  grid-template-columns: 1fr 1fr;
-  background-color: rgb(219, 219, 219);
-  img{
+  // grid-template-columns: 1fr 1fr;
+  // margin: 2rem;
+  @include clearfix;
+  height: 30rem;
+  // border: 2px solid blue;
+  box-sizing: border-box;
+  .TextDetails{
+    background-color: rgb(219, 219, 219);
+    float: right;
+    width: 50%;
     height: 30rem;
-    width:100%;
+  }
+  position: relative;
+  img{
+    float: left;
+    height: 30rem;
+    width:50%;
     object-fit: cover;
     object-position: left;
+    // position: relative;
+    // border: 2px solid red;
+  }&::after{
+    content: "";
+    // border: 2px solid red;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.616);
+    // clear: both;
+  }
+  h2{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 1;
   }
 }
 .hero {
@@ -38,10 +121,45 @@
     height: 30vh;
   }
 
-  .object1Imgs{
-    display: block;
-    width: 100%;
+  .object1, .object2{
+    height: auto;
+    .TextDetails{
+      float: none;
+      width: 100%;
+      display: block;
+    }
+    img{
+      float: none;
+      width: 100%;
+      display: block;
+      position: relative;
+    }&::after{
+      content: "";
+      // border: 2px solid red;
+      width: 100%;
+      height: 30rem;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    h2{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      font-size: 3rem;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      // background-color: black
+    }
   }
+  
+
+  
+  // .object1Imgs{
+  //   display: block;
+  //   width: 100%;
+  // }
   // .objects{
   //   display: block;
   // }
