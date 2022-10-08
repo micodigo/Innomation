@@ -142,7 +142,7 @@ function Form(props) {
           </button>
         </form>
       </div>
-      <div>
+      <div className={cls.div}>
         <Map2 />
       </div>
       {submit && <Modal onClick={closeModal} />}
