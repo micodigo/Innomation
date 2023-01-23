@@ -12,7 +12,7 @@ function MVV() {
         </p>
       </div>
       <div className={`${classes.vision} ${classes.box}`}>
-        <h3 className={classes.heading_secondary}>Our Vision</h3>
+        <h3 className={classes.heading_secondary}>Our Values</h3>
         <p className={classes.description}>
           Utilize latest trends & technologies available in market and implement
           them to provide Smart, Safe, and Best solutions to our customers with
@@ -20,7 +20,7 @@ function MVV() {
         </p>
       </div>
       <div className={`${classes.values} ${classes.box}`}>
-        <h3 className={classes.heading_secondary}>Our Values</h3>
+        <h3 className={classes.heading_secondary}>Our Vision</h3>
         <p className={classes.description}>
           <b>Accountability</b>: Each of us is responsible for our words, our
           actions, and our results. <br />

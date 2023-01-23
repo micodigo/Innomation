@@ -8,9 +8,9 @@
   background-image: url("../../../Images/Mission.png");
   height: 110vh;
   background-position: top;
-  background-size: 49%;
+  background-size: 30%;
   background-repeat: no-repeat;
-  display: grid;
+  // display: grid;
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -28,7 +28,7 @@
   // top: 5rem;
   // left: 4%;
   justify-self: start;
-  width: 30rem;
+  width: 25rem;
   @include halfborder(80%, 50%);
 }
 .vision {
@@ -37,8 +37,8 @@
   }
   justify-self: end;
   // right: 2rem;
-  height: 40vh;
-  width: 30rem;
+  height: 30vh;
+  width: 27rem;
   @include halfborder(60%, 70%);
 }
 .values {
@@ -49,6 +49,6 @@
   // left: 50%;
   // transform: translateX(-50%);
   justify-self: center;
-  width: 50rem;
+  width: 40rem;
   @include halfborder(80%, 50%);
 }
